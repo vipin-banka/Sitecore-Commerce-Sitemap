@@ -1,0 +1,152 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5CC1F605-17A7-4B84-A705-4A8D3FB8F181}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sitecore.Commerce.Sitemap</RootNamespace>
+    <AssemblyName>Sitecore.Commerce.Sitemap</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.Abstractions.1.0.0\lib\netstandard1.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sitecore.Commerce.Engine.Connect, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.Commerce.Engine.Connect.2.1.54\lib\net462\Sitecore.Commerce.Engine.Connect.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sitecore.Commerce.ServiceProxy, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.Commerce.Engine.Connect.2.1.54\lib\net462\Sitecore.Commerce.ServiceProxy.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sitecore.Commerce.XA.Foundation.Common, Version=1.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.Commerce.XA.Foundation.Common.1.4.150\lib\net462\Sitecore.Commerce.XA.Foundation.Common.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sitecore.ContentSearch, Version=3.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.ContentSearch.NoReferences.9.0.180604\lib\NET462\Sitecore.ContentSearch.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sitecore.ContentSearch.Linq, Version=3.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.ContentSearch.Linq.NoReferences.9.0.180604\lib\NET462\Sitecore.ContentSearch.Linq.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sitecore.Kernel, Version=11.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.Kernel.NoReferences.9.0.180604\lib\NET462\Sitecore.Kernel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sitecore.XA.Feature.SiteMetadata, Version=3.7.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.XA.Feature.SiteMetadata.3.7.0\lib\NET462\Sitecore.XA.Feature.SiteMetadata.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Reflection, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Reflection.4.1.0\lib\net462\System.Reflection.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Config\Include\zzzCustomization\Sitecore.Commerce.Sitemap.config" />
+    <None Include="packages.config" />
+    <None Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Constants.cs" />
+    <Compile Include="Managers\SearchManager.cs" />
+    <Compile Include="Pipelines\IOC\RegisterSitemapServices.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SitemapGenerator.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>37293</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:37293/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
