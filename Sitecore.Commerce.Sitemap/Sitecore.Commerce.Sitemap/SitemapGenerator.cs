@@ -1,5 +1,4 @@
-﻿using Sitecore.Commerce.Sitemap.Managers;
-using Sitecore.Commerce.XA.Foundation.Common.Context;
+﻿using Sitecore.Commerce.XA.Foundation.Common.Context;
 using Sitecore.Data.Items;
 using Sitecore.XA.Feature.SiteMetadata.Sitemap;
 using System;

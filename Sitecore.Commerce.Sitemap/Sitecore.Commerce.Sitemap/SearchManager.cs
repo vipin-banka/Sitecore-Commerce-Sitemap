@@ -12,7 +12,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 
-namespace Sitecore.Commerce.Sitemap.Managers
+namespace Sitecore.Commerce.Sitemap
 {
     public class SearchManager
     {

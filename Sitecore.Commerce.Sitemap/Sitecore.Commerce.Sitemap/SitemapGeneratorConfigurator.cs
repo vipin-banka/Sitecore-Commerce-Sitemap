@@ -3,9 +3,9 @@ using Microsoft.Extensions.DependencyInjection.Extensions;
 using Sitecore.DependencyInjection;
 using Sitecore.XA.Feature.SiteMetadata.Sitemap;
 
-namespace Sitecore.Commerce.Sitemap.Pipelines.IOC
+namespace Sitecore.Commerce.Sitemap
 {
-    public class RegisterSitemapServices : IServicesConfigurator
+    public class SitemapGeneratorConfigurator : IServicesConfigurator
     {
         public void Configure(IServiceCollection serviceCollection)
         {

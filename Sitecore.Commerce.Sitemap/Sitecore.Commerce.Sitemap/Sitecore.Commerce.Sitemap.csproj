@@ -103,8 +103,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Constants.cs" />
-    <Compile Include="Managers\SearchManager.cs" />
-    <Compile Include="Pipelines\IOC\RegisterSitemapServices.cs" />
+    <Compile Include="SearchManager.cs" />
+    <Compile Include="SitemapGeneratorConfigurator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SitemapGenerator.cs" />
   </ItemGroup>
