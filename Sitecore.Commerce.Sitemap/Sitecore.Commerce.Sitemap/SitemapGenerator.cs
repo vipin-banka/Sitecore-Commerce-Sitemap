@@ -23,13 +23,6 @@ namespace Sitecore.Commerce.Sitemap
             return items;
         }
 
-        protected virtual IList<Item> GetCategoryAndProducts()
-        {
-            var service = new SearchManager(this.StorefrontContext);
-            var items = service.GetAllCategoriesAndProducts();
-            return items;
-        }
-
         protected override string GetFullLink(Item item, SitemapLinkOptions options)
         {
             if (item.Template.ID.ToString().Equals(Constants.Template.Category, StringComparison.OrdinalIgnoreCase))
@@ -42,6 +35,13 @@ namespace Sitecore.Commerce.Sitemap
             }
 
             return base.GetFullLink(item, options);
+        }
+
+        protected virtual IList<Item> GetCategoryAndProducts()
+        {
+            var service = new SearchManager(this.StorefrontContext);
+            var items = service.GetAllCategoriesAndProducts();
+            return items;
         }
 
         private string GetCanonicalUrl(string sectionName, Item item, SitemapLinkOptions options)
